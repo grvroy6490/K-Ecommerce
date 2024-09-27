@@ -1,0 +1,27 @@
+$primary-font: "Libre Baskerville", system-ui;
+$secondary-font: "Playfair Display", system-ui;
+
+$black: #000;
+$white: #fff;
+$green: #0A8200;
+$gray: #444E66;
+$navy-blue:#00071B;
+$dark-green: #1A4242;
+$blue:#002482;
+
+:root{ // HTML
+    font-size: 100%; // 16px base size of browser 
+    
+    --step--2: clamp(0.5208rem, 0.4681rem + 0.2635vw, 0.8898rem);
+    --step--1: clamp(0.625rem, 0.5618rem + 0.3162vw, 1.0677rem);
+    --step-0: clamp(0.75rem, 0.6741rem + 0.3795vw, 1.2813rem);
+    --step-1: clamp(0.9rem, 0.8089rem + 0.4554vw, 1.5375rem);
+    --step-2: clamp(1.08rem, 0.9707rem + 0.5464vw, 1.845rem);
+    --step-3: clamp(1.296rem, 1.1649rem + 0.6557vw, 2.214rem);
+    --step-4: clamp(1.5552rem, 1.3978rem + 0.7869vw, 2.6568rem);
+    --step-5: clamp(1.8662rem, 1.6774rem + 0.9442vw, 3.1882rem);
+}
+
+
+
+

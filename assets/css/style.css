@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  font-size: 100%;
+  --step--2: clamp(0.5208rem, 0.4681rem + 0.2635vw, 0.8898rem);
+  --step--1: clamp(0.625rem, 0.5618rem + 0.3162vw, 1.0677rem);
+  --step-0: clamp(0.75rem, 0.6741rem + 0.3795vw, 1.2813rem);
+  --step-1: clamp(0.9rem, 0.8089rem + 0.4554vw, 1.5375rem);
+  --step-2: clamp(1.08rem, 0.9707rem + 0.5464vw, 1.845rem);
+  --step-3: clamp(1.296rem, 1.1649rem + 0.6557vw, 2.214rem);
+  --step-4: clamp(1.5552rem, 1.3978rem + 0.7869vw, 2.6568rem);
+  --step-5: clamp(1.8662rem, 1.6774rem + 0.9442vw, 3.1882rem);
+}
+
+.heading {
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step-5);
+}
+
+.sub__heading {
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step-4);
+}
+
+.third__heading {
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step-1);
+}
+
+.para {
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step-0);
+}
+
+.small {
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step--2);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", system-ui;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */

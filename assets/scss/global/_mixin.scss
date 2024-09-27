@@ -1,0 +1,21 @@
+
+
+@mixin transition($type, $time){
+    transition: $type $time ease-in-out;
+    -webkit-transition: $type $time ease-in-out;
+    -moz-transition: $type $time ease-in-out;
+}
+
+
+@mixin mqMax($arg){
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+
+@mixin mqMin($arg){
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
