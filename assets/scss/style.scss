@@ -28,7 +28,7 @@ html {
     width: 100%;
     background-color: $white;
 
-    @include mqMax(575px){
+    @include mqMax(768px){
         padding: 10px 0;
     }
 
