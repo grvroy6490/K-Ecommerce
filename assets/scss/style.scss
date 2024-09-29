@@ -1,27 +1,312 @@
-
 @import 'global/mixin';
 @import 'global/variables';
 @import 'global/typography';
 
-
-*{
+* {
     box-sizing: border-box;
+    // border: 1px solid #000;
 }
 
-html,
-body{
+body,
+html {
     margin: 0;
     padding: 0;
-    font-family: $primary-font;  
+    font-family: $primary-font;
 }
 
+.wrapper {
+    width: 100%;    
+}
 
-.wrapper{
+.header {
+    padding: 10px 5rem;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    background-color: $white;
+
+    @include mqMax(575px){
+        padding: 10px 0;
+    }
+
+    .container-fluid {
+        .left-col {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                width: 57px;
+                height: auto;
+            }
+
+            .navigation {
+                width: 100%;
+
+                @include mqMax(1024px){
+                    display: none;
+                }
+
+                .navbar-nav {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: center;
+
+                    .nav-item {
+                        text-align: center;
+                        margin: 0 15px;
+
+                        .nav-link {
+                            color: $black;
+                            font-family: $primary-font;
+                            font-size: var(--step--1);
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-col {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+    
+
+            .search-panel {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-end;
+                margin-right: 3rem;
+
+                @include mqMax(1024px){
+                    display: none;
+                }
+
+                .input-box {
+                    display: flex;
+                    align-items: center;
+                    width: 70%;
+                    background-color: #F0F0F0;
+                    border: none;
+                    padding-right: 7px;
+                    border-radius: 5px;
+  
+
+
+                    input[type="search"] {
+                        height: auto;
+                        width: 100%;
+                        background-color: transparent;
+                        border: none;
+                        padding-left: 10px;
+                        font-family: $primary-font;
+                        font-size: var(--step--1);
+
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .btn-search {
+                        width: 40px;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .account-nav {
+                display: flex;
+                align-items: center;
+                column-gap: 7px;
+
+                .wishlist-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    border: none;
+                    width: 40px;
+
+                    img{
+                        width: 40px !important;
+                    }
+                }
+
+                .cart-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    border: none;
+                    width: 40px;
+
+                    img{
+                        width: 40px !important;
+                    }
+                }
+
+                .dropdown {
+                    .btn-secondary {
+                        background-color: transparent;
+                        padding: 0;
+                        min-width: 120px;
+                        border: none;
+
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            margin-right: 5px;
+                        }
+
+                        &::after {
+                            color: $black;
+                        }
+
+                        span {
+                            color: $black;
+                            font-family: $primary-font;
+                            font-size: var(--step--1);
+                        }
+                    }
+
+                    .dropdown-menu {
+                        li {
+                            .dropdown-item {
+                                font-family: $primary-font;
+                                font-size: var(--step--1);    
+                                
+                                &:hover{
+                                    background-color: rgba($color: #000000, $alpha: 0.1);
+                                }
+
+                                &:focus{
+                                    background-color: rgba($color: #000000, $alpha: 0.1);
+                                    color: $black;
+                                }
+
+                                
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-section{
     width: 100%;
     overflow-x: hidden;
 }
 
+.hero-banner{
+    background-color: $white;
+    height: 100vh;
+
+    .row,
+    .col-12{
+        height: 100%;
+    }
+
+    .swiper{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .swiper-slide{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .hero-slider{
+        .swiper-slide{
+            height: 95%;
+
+            @include mqMax(992px){
+                height: 50%;
+            }
+            
+            .row{
+                width: 100%;
+            }
+
+            .left-col{
+                padding: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
 
 
+            .right-col{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                background-image: url('../images/hero-texture.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                .content{
+                    text-align: center;
+
+                    h1{
+                        font-size: calc(var(--step-5) * 2.5);
+                        font-family: $secondary-font;
+                        font-weight: bold;
+                    }
+
+                    .explore-btn{
+                        background-color: transparent;
+                        border: 1px solid $black;
+                        padding: 5px 15px;
+                        border-radius: 5px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                opacity: .4;
+            }
+
+            .swiper-pagination-bullet-active{
+                opacity: 1;
+                background: $navy-blue;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
 
 

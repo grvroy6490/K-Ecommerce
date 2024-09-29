@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-.heading{
+.heading{ // 48
     font-family: $primary-font;
     font-size:var(--step-5)
 }
 
-.sub__heading{
+.sub__heading{ // 36
     font-family: $primary-font;
     font-size:var(--step-4)
 
 }
 
-.third__heading{
+.third__heading{ // 24
     font-family: $primary-font;
     font-size:var(--step-1)
 }
 
-.para{
+.para{ // 18
     font-family: $primary-font;
     font-size:var(--step-0)
 }
 
-.small{
+.small{ // 16
     font-family: $primary-font;
     font-size:var(--step--2)
 }
