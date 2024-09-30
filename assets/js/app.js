@@ -10,6 +10,27 @@ $(document).ready(() => {
             clickable:true
         },
     })
+
+    const trendingSlider = new Swiper('.trending-slider',{
+        autoplay: {
+            delay: 3000,
+
+        },
+        allowTouchMove:true,
+        slidesPerView:1,
+        spaceBetween:20,
+        breakpoints:{
+            768:{
+                slidesPerView:3
+            },
+            1024:{
+                slidesPerView:4
+            },
+            1366:{
+                slidesPerView:4
+            }
+        }
+    })
         
 })
 
