@@ -22,7 +22,7 @@ html {
 
 .header {
     padding: 10px 5rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ededec;
     position: fixed;
     top: 0;
     left: 0;
@@ -330,6 +330,57 @@ html {
         padding-bottom: 30px;
         .swiper-slide{
             overflow: visible;
+        }
+    }
+}
+
+
+.deals-slider-section {
+
+    padding: 50px 0;
+
+    .row {
+        &:first-child {
+            margin-bottom: 20px;
+
+        }
+    }
+    .deals-slider{
+        padding-bottom: 30px;
+        .swiper-slide{
+            overflow: visible;
+        }
+    }
+}
+
+.offers-slider-section {
+
+    padding: 50px 0;
+
+    .row {
+        &:first-child {
+            margin-bottom: 20px;
+
+        }
+    }
+    .offers-slider{
+        padding-bottom: 30px;
+        .swiper-slide{
+            overflow: visible;
+            
+
+            .card-block-03{
+                transform-origin: center;
+                transform: scale(0.9);
+                @include transition('all', .3s)
+            }
+        }
+
+        .swiper-slide-active{
+            .card-block-03{
+                transform-origin: center;
+                transform: scale(1);
+            }
         }
     }
 }

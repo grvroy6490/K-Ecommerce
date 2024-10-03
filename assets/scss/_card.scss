@@ -1,4 +1,6 @@
-.card-block {
+.card-block-01,
+.card-block-02,
+.card-block-03 {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -75,6 +77,80 @@
 
             }
         }
+
+    }
+}
+
+
+
+.card-block-02 {
+   
+    .content-block {
+        background: $white;
+        padding: 15px 20px;
+        text-align: center;
+        padding-top: 25px;
+
+
+        .deals-logo{
+            width: 150px;
+            margin-bottom: 25px;
+
+
+        }
+        
+        .sub__heading{
+            margin-bottom: 10px;
+
+        }
+        
+
+    }
+}
+
+.card-block-03 {
+
+    display: flex;
+    flex-direction:row-reverse;
+    max-height: 500px;
+
+    .image-block{
+        width: 50%;
+        border-radius: 0;
+        height: 100%;
+
+    }
+    
+    .content-block {
+        background: $white;
+        padding: 15px 20px;
+        text-align: center;
+        padding-top: 25px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+
+        .deals-logo{
+            width: 180px;
+            margin-bottom: 45px;
+            
+
+
+        }
+        
+      
+        .explore-btn {
+            background-color: transparent;
+            border: 1px solid $black;
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
 
     }
 }
