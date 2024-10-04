@@ -326,9 +326,11 @@ html {
 
         }
     }
-    .trending-slider{
+
+    .trending-slider {
         padding-bottom: 30px;
-        .swiper-slide{
+
+        .swiper-slide {
             overflow: visible;
         }
     }
@@ -345,9 +347,11 @@ html {
 
         }
     }
-    .deals-slider{
+
+    .deals-slider {
         padding-bottom: 30px;
-        .swiper-slide{
+
+        .swiper-slide {
             overflow: visible;
         }
     }
@@ -363,24 +367,193 @@ html {
 
         }
     }
-    .offers-slider{
-        padding-bottom: 30px;
-        .swiper-slide{
-            overflow: visible;
-            
 
-            .card-block-03{
+    .offers-slider {
+        padding-bottom: 30px;
+
+        .swiper-slide {
+            overflow: visible;
+
+
+            .card-block-03 {
                 transform-origin: center;
                 transform: scale(0.9);
                 @include transition('all', .3s)
             }
         }
 
-        .swiper-slide-active{
-            .card-block-03{
+        .swiper-slide-active {
+            .card-block-03 {
                 transform-origin: center;
                 transform: scale(1);
             }
         }
     }
+}
+
+.brand-show {
+
+    .brand-show-container {
+        position: relative;
+        overflow: hidden;
+
+        .overlay-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 33;
+            left: 0;
+            top: 0;
+            background-color: rgba($color: $black, $alpha: 0.65);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                color: $white;
+
+                &:first-child {
+                    font-size: calc(var(--step-5)*2);
+                    margin-bottom: calc(var(--step-5)*1.5);
+                    ;
+
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 20px;
+
+                }
+
+                &:nth-child(3) {
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .explore-btn {
+                background-color: transparent;
+                border: 1px solid $white;
+                padding: 5px 15px;
+                border-radius: 5px;
+                margin-top: 15px;
+                color: $white;
+            }
+        }
+    }
+
+}
+
+
+.shop-by-category {
+
+    padding: 50px 0;
+
+    .row {
+        &:first-child {
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .shop-category {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 250px);
+
+        @include mqMax(768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 250px);
+
+        }
+
+
+        .image-grid {
+            border-radius: .5rem;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .3s ease-in-out;
+
+                // @include transition('all', .3s);
+                &:hover{
+                    transform: scale(1.2);
+                    transform-origin: center;
+                }
+
+            }
+
+        }
+
+        .image-block1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+
+            @include mqMax(768px) {
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 1;
+            }
+        }
+
+       
+
+        .image-block2 {
+            grid-column: 5 / span 1;
+            grid-row: 2/ span 1;
+
+            @include mqMax(768px) {
+                grid-column: 2/ span 1;
+                grid-row: 1 / span 1;
+            }
+        }
+
+        .image-block3 {
+            grid-column: 5 / span 2;
+            grid-row: 1/ span 1;
+
+            @include mqMax(768px) {
+                grid-column: 1 / span 1;
+                grid-row: 2 / span 1;
+            }
+        }
+
+        .image-block4 {
+            grid-column: 3 / span 2;
+            grid-row: 2/ span 1;
+
+            @include mqMax(768px) {
+                grid-column: 2 / span 1;
+                grid-row: 2 / span 1;
+            }
+        }
+
+        .image-block5 {
+            grid-column: 3 / span 2;
+            grid-row: 1/ span 1;
+
+            @include mqMax(768px) {
+                grid-column: 1 / span 1;
+                grid-row: 3 / span 1;
+            }
+        }
+
+        .image-block6 {
+            grid-column: 6 / span 1;
+            grid-row: 2/ span 1;
+
+            @include mqMax(768px) {
+                grid-column: 2 / span 1;
+                grid-row: 3 / span 1;
+            }
+        }
+
+
+
+
+    }
+
 }
