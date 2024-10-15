@@ -21,6 +21,25 @@ $blue:#002482;
     --step-4: clamp(1.5552rem, 1.3978rem + 0.7869vw, 2.6568rem);
     --step-5: clamp(1.8662rem, 1.6774rem + 0.9442vw, 3.1882rem);
 }
+.btn-primary{
+    
+        background-color: transparent !important;
+        border: 1px solid $black !important;
+        padding: 5px 15px !important;
+        border-radius: 5px !important;
+        margin-top: 30px !important;
+        color: $black !important;
+        transition: all 0.3s ease-in-out !important;
+
+        &:hover{
+            
+            background-color: $black !important;
+            color: $white !important;
+
+        }
+
+
+}
 
 
 
