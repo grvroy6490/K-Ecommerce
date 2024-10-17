@@ -6,19 +6,37 @@
 
         .product-image-slider{
             width: 100%;
+            height: 100%;
 
             .swiper-slide{
                 overflow: hidden;
                 border-radius: 10px;
+                cursor: pointer;
+
+                @include mqMax(768px){
+                    border-radius: 5px;
+                }
                 img{
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
 
         .preview-image{
+            height: 400px;
             overflow: hidden;
             border-radius: 10px;
+            @include mqMax(768px){
+                border-radius: 5px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
+    
 }

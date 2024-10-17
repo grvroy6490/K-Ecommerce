@@ -118,4 +118,12 @@ $(document).ready(() => {
         
 })
 
+// PRODUCT PAGE
+
+const productImageSlider =new Swiper(".product-image-slider",{
+    direction:"vertical",
+    slidesPerView:5,
+    spaceBetween:10
+})
+
 
