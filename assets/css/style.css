@@ -1040,4 +1040,19 @@ html {
 
 .product-info {
   min-height: 300px;
+  padding-top: 100px;
+}
+.product-info .product-row .product-image-slider {
+  width: 100%;
+}
+.product-info .product-row .product-image-slider .swiper-slide {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product-info .product-row .product-image-slider .swiper-slide img {
+  width: 100%;
+}
+.product-info .product-row .preview-image {
+  overflow: hidden;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

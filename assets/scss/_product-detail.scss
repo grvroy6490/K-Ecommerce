@@ -1,3 +1,24 @@
 .product-info{
     min-height: 300px;
+    padding-top: 100px;
+
+    .product-row{
+
+        .product-image-slider{
+            width: 100%;
+
+            .swiper-slide{
+                overflow: hidden;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .preview-image{
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
 }
