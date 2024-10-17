@@ -886,4 +886,158 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+}
+
+.footer {
+  width: 100%;
+  padding: 80px 0 0;
+  background-color: #00071B;
+  margin-top: 50px;
+}
+.footer .row {
+  margin: 0;
+}
+.footer .logo-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer .logo-block img {
+  width: 84px;
+  filter: invert(100) brightness(100);
+  margin-right: 20px;
+}
+.footer .logo-block h5 {
+  font-size: 64px;
+  color: #fff;
+  font-family: "Libre Baskerville", system-ui;
+}
+.footer .footer-menu {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer .footer-menu .menu-item {
+  width: 14%;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer-menu .menu-item {
+    width: 33.3333333333%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer .footer-menu .menu-item {
+    width: 50%;
+  }
+}
+.footer .footer-menu .menu-item .third__heading {
+  color: #fff;
+  font-weight: bold;
+}
+.footer .footer-menu .menu-item .menu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer .footer-menu .menu-item .menu-list li {
+  margin-bottom: 7px;
+}
+.footer .footer-menu .menu-item .menu-list li .menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer-menu .get-in-touch {
+  width: 30%;
+}
+@media screen and (max-width: 575px) {
+  .footer .footer-menu .get-in-touch {
+    width: 100%;
+  }
+}
+.footer .footer-menu .get-in-touch .third__heading {
+  color: #fff;
+}
+.footer .footer-menu .get-in-touch .para {
+  color: #fff;
+}
+.footer .footer-menu .get-in-touch form .form-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+}
+.footer .footer-menu .get-in-touch form .form-group .icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-menu .get-in-touch form .form-group .icon svg {
+  width: 100%;
+}
+.footer .footer-menu .get-in-touch form .form-group .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Libre Baskerville", system-ui;
+  font-size: var(--step-0);
+}
+.footer .footer-menu .get-in-touch form .form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.footer .sub_footer {
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .sub_footer .col-md-8 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 575px) {
+  .footer .sub_footer .col-md-8 {
+    flex-wrap: wrap;
+  }
+}
+.footer .sub_footer .col-md-8 .para {
+  margin: 0;
+}
+@media screen and (max-width: 575px) {
+  .footer .sub_footer .col-md-8 .para {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.footer .sub_footer .col-md-8 .para a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .sub_footer .col-md-8 .social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .sub_footer .col-md-8 .social-links li {
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+.footer .sub_footer .col-md-8 .social-links li a img {
+  width: 100%;
+}
+.footer .sub_footer .col-md-8 .social-links li:last-child {
+  margin-right: 0;
+}
+
+.product-info {
+  min-height: 300px;
 }/*# sourceMappingURL=style.css.map */
